@@ -1,3 +1,5 @@
+**Official Preprint & Data Archive:** [DOI: 10.5281/zenodo.18877418](https://doi.org/10.5281/zenodo.18877418)
+
 Solvency Field Theory (SFT)
 Dynamic Dark Energy from Baryonic Entropy Depletion and Black Hole Horizon Growth
 
