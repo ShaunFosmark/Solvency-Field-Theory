@@ -1,4 +1,31 @@
-**Official Preprint & Data Archive:** [DOI: 10.5281/zenodo.18877418](https://doi.org/10.5281/zenodo.18877418)
+
+### The Epistemic Structure of Solvency Field Theory
+
+Solvency Field Theory (SFT) is an effective cosmological model built from a small set of established ideas that are usually treated separately. To evaluate the framework accurately, it is critical to separate the foundational inputs from the operational model and the physical interpretation.
+
+**1. The Established Inputs (The Foundation)**
+
+* Irreversible information processing carries a strict thermodynamic cost (Landauer's Principle).
+* Causal regions have a finite information capacity (Bekenstein Bound).
+* Black holes and cosmological horizons make entropy a geometric quantity.
+* Standard cosmology requires any late-time driver of expansion to appear through an effective energy or pressure term in the Friedmann equations.
+
+**2. The Core Hypothesis (The Master Relation)**
+Cosmic expansion is not merely a background kinematic fact, but an effective geometric response to irreversible interaction. The expansion rate is tied to entropy throughput relative to an active reservoir:
+
+
+$$H = \frac{\dot{S}_{total}}{I}$$
+
+
+Where $\dot{S}_{total}$ is the active macroscopic entropy production rate and $I$ is the accessible information ledger (the radiation field).
+
+**3. The Operational Closure (The Data Model)**
+To test this hypothesis against observation, SFT utilizes a stock-and-flow hazard model where the active ledger is leaky. This is represented by a continuous Hazard Exit ODE ($dS/dt = \dot{S} - \lambda S$). The parameters $\Xi$ and the closure normalization $\alpha$ are *calibrated* directly against the DESI DR2/Y3 Cobaya MCMC chains, not yet derived from microphysics.
+
+**4. The Physical Interpretation (The Engine Crash)**
+In SFT, late-time cosmic acceleration is interpreted as the response of a causally bounded universe to continued irreversible history under declining ordinary interaction opportunity. As the fuel-limited astrophysical engines (stars and black hole accretion) crash, horizon growth emerges as the dominant remaining macroscopic channel. The DESI-observed phantom crossing ($w < -1$) is the thermodynamic signature of this transition.
+
+---
 
 Solvency Field Theory (SFT)
 Dynamic Dark Energy from Baryonic Entropy Depletion and Black Hole Horizon Growth
