@@ -1,3 +1,5 @@
+for questions or comments:
+https://x.com/Shaun_Fosmark
 
 ### The Epistemic Structure of Solvency Field Theory
 
