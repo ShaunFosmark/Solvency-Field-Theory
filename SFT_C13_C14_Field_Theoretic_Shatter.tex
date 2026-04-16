@@ -1,0 +1,270 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\hypersetup{colorlinks=true, linkcolor=blue!50!black, urlcolor=blue!50!black}
+\setlength{\parskip}{0.65em}
+\setlength{\parindent}{0pt}
+\definecolor{accent}{RGB}{32,78,135}
+\definecolor{soft}{RGB}{245,247,250}
+\newcommand{\status}[1]{\textcolor{accent}{\textbf{Status:}} #1}
+\begin{document}
+
+{\Large\bfseries Solvency Field Theory Companion Note: Corrected Field-Theoretic Shatter and CMB Source-Field Connection\par}
+\vspace{0.35em}
+{\large C13--C14 Draft Note\par}
+\vspace{0.5em}
+\textcolor{accent}{\rule{\textwidth}{1pt}}
+
+\section*{Purpose}
+This note freezes the field-theoretic extension built during the Open Theorem 6 exploration and connects it to the existing CMB projection program. Two goals are pursued:
+\begin{enumerate}[leftmargin=1.6em]
+  \item derive the shatter as a thermodynamic instability of the lag field,
+  \item show how the post-critical relic phase field supplies the source amplitude for the existing CMB projection chain.
+\end{enumerate}
+The note also incorporates the sign correction identified during the audit pass: the stable shared regime must correspond to a \emph{positive} quadratic mass term, and the shatter must occur when the solvency ratio exceeds unity.
+
+\section*{C13. Field-Theoretic Shatter and Independent-Clock Decoupling}
+\textcolor{accent}{\textbf{Claim being developed:}} the relic phase field can be interpreted as the broken-phase order parameter of a perturbed lag field $\chi$, with the instability driven by ledger insolvency.
+
+\status{Field-theoretic instability and order-parameter structure derived at the minimal effective level; first-principles derivation of the decoupling fraction remains open.}
+
+\subsection*{C13.1 Local solvency ratio}
+The global SFT backbone is
+\begin{equation}
+H = \frac{\dot S}{I}.
+\end{equation}
+To test a shatter, we promote this to a local control quantity by defining a maintenance demand density $\dot s(\mathbf x,t)$ and an accommodation density $i(\mathbf x,t)$. The local solvency ratio is
+\begin{equation}
+\Lambda(\mathbf x,t) = \frac{\dot s(\mathbf x,t)}{H\,i(\mathbf x,t)}.
+\end{equation}
+Interpretation:
+\begin{align*}
+\Lambda < 1 &\quad \text{solvent / stable},\\
+\Lambda = 1 &\quad \text{critical},\\
+\Lambda > 1 &\quad \text{insolvent / unstable}.
+\end{align*}
+Define the control parameter
+\begin{equation}
+\epsilon(\mathbf x,t)=\Lambda(\mathbf x,t)-1.
+\end{equation}
+This is the thermodynamic margin-call variable of the local theory.
+
+\subsection*{C13.2 Minimal local action}
+Promote the lag variable to a field,
+\begin{equation}
+\chi(t,\mathbf x)=\bar\chi(t)+\delta\chi(t,\mathbf x),
+\end{equation}
+and write the mildest local effective action consistent with locality and the $\chi\to-\chi$ symmetry,
+\begin{equation}
+S_\chi=\int d^4x\,\sqrt{-g}\left[\frac{K}{2}g^{\mu\nu}\partial_\mu\chi\,\partial_\nu\chi - V(\chi,\Lambda)\right],
+\end{equation}
+with
+\begin{equation}
+\boxed{V(\chi,\Lambda)=\frac{A}{2}(1-\Lambda)\chi^2+\frac{\lambda}{4}\chi^4,\qquad A>0,\ \lambda>0.}
+\end{equation}
+This sign convention is the corrected one. It guarantees that the shared regime is stable when $\Lambda<1$ and unstable when $\Lambda>1$.
+
+\subsection*{C13.3 Effective mass and perturbation equation}
+From the potential, the effective mass term is
+\begin{equation}
+\boxed{M_{\rm eff}^2(\mathbf x,t)=A(1-\Lambda).}
+\end{equation}
+Therefore
+\begin{align*}
+\Lambda<1 &\Rightarrow M_{\rm eff}^2>0 \quad \text{stable},\\
+\Lambda=1 &\Rightarrow M_{\rm eff}^2=0 \quad \text{critical},\\
+\Lambda>1 &\Rightarrow M_{\rm eff}^2<0 \quad \text{tachyonic instability.}
+\end{align*}
+On a flat FLRW background,
+\begin{equation}
+\Box\chi=-\ddot\chi-3H\dot\chi+\frac{1}{a^2}\nabla^2\chi,
+\end{equation}
+so the linearized perturbation equation is
+\begin{equation}
+\boxed{\ddot{\delta\chi}+3H\dot{\delta\chi}-\frac{1}{a^2}\nabla^2\delta\chi + A(1-\Lambda)\,\delta\chi = 0.}
+\end{equation}
+This is the first honest field-theoretic shatter equation in SFT language.
+
+\subsection*{C13.4 Broken-phase order parameter}
+The equilibrium states follow from
+\begin{equation}
+\frac{\partial V}{\partial \chi}=A(1-\Lambda)\chi+\lambda\chi^3=0.
+\end{equation}
+For the broken phase $\Lambda>1$, the nonzero minima satisfy
+\begin{equation}
+\chi_{\rm eq}^2 = \frac{A}{\lambda}(\Lambda-1).
+\end{equation}
+So the post-critical order parameter is
+\begin{equation}
+\boxed{\Phi_{\rm eq}\propto \sqrt{\Lambda-1}.}
+\end{equation}
+At the minimal effective level, the relic phase field is therefore the broken-phase order parameter of the lag field rather than an inserted ansatz.
+
+\subsection*{C13.5 Shared and independent maintenance burdens}
+Write the total maintenance demand density as
+\begin{equation}
+\dot s_{\rm tot}(T)=\dot s_{\rm shared}(T)+\dot s_{\rm ind}(T).
+\end{equation}
+The shared burden is the maintenance load of the collective plasma regime; the independent burden is the load carried by emerging massive clocks that can no longer remain submerged in the shared bookkeeping system.
+
+Define the independent-clock burden fraction
+\begin{equation}
+\boxed{f(T)=\frac{\dot s_{\rm ind}(T)}{\dot s_{\rm shared}(T)+\dot s_{\rm ind}(T)}.}
+\end{equation}
+Then the mildest solvency law is
+\begin{equation}
+\boxed{\Lambda(T)=\Lambda_0+\Lambda_1 f(T),}
+\end{equation}
+where $\Lambda_0$ is the shared-plasma baseline and $\Lambda_1$ measures how strongly the independent-clock burden loads the ledger.
+
+\subsection*{C13.6 Physical scaling of the two burdens}
+The shared plasma burden is taken at first pass to scale like radiation energy density,
+\begin{equation}
+\dot s_{\rm shared}(T)\propto \rho_{\rm rad}(T)\sim T^4.
+\end{equation}
+For the independent burden, each massive carrier ticks at the Compton rate
+\begin{equation}
+\nu_C=\frac{mc^2}{h},
+\end{equation}
+so a first physical form is
+\begin{equation}
+\dot s_{\rm ind}(T)\sim n_m(T)\frac{mc^2}{h}D(T),
+\end{equation}
+where $n_m(T)$ is the relevant massive-carrier abundance and $D(T)$ is the fraction of those degrees of freedom that require independent bookkeeping.
+
+The key conceptual correction is this: the shatter is not controlled by raw massive-particle abundance alone. What matters is the \emph{decoupling fraction} of the maintenance burden.
+
+\subsection*{C13.7 Effective decoupling law}
+The mildest bounded effective model is therefore
+\begin{equation}
+\boxed{D(T)\approx \frac{1}{1+(T/T_d)^p},}
+\end{equation}
+with $T_d$ the turn-on scale and $p$ a sharpness exponent. When the slow variation of $n_m(T)$ can be absorbed into the coefficients, this induces the same effective shape for the burden fraction,
+\begin{equation}
+\boxed{f(T)\approx \frac{1}{1+(T/T_d)^p}.}
+\end{equation}
+This is the physically interpreted version of the crossover family already used in the bounded scans.
+
+\subsection*{C13.8 Shatter condition}
+With the corrected sign and the decoupling law in hand, the shatter occurs when
+\begin{equation}
+\boxed{\Lambda(T_c)=1.}
+\end{equation}
+Equivalently,
+\begin{equation}
+M_{\rm eff}^2(T_c)=0,
+\end{equation}
+and for lower temperatures the broken phase is entered whenever $\Lambda(T)>1$.
+
+\subsection*{C13.9 Summary of the field-theoretic result}
+The minimal field-theoretic extension now has a clean internal spine:
+\begin{align}
+H &= \frac{\dot S}{I},\\
+\Lambda &= \frac{\dot s}{Hi},\\
+M_{\rm eff}^2 & = A(1-\Lambda),\\
+\Phi_{\rm eq} &\propto \sqrt{\Lambda-1},\\
+\Lambda(T) &= \Lambda_0+\Lambda_1 f(T),\\
+\Lambda(T_c)&=1.
+\end{align}
+This is the strongest honest statement currently available for Open Theorem 6.
+
+\section*{C14. Connection of the Shatter Field to the CMB Projection Program}
+\textcolor{accent}{\textbf{Claim being developed:}} the new field-theoretic shatter note does not replace the existing CMB projection pipeline; it supplies the missing source-field interpretation. The broken-phase order parameter sets the relic phase amplitude, and the observable anisotropy remains a projected and filtered readout of spatial perturbations of that field.
+
+\status{Source-field connection sharpened; observable transfer chain still candidate-level and not a fully closed theorem.}
+
+\subsection*{C14.1 What existed before}
+Before the field-theoretic shatter note, the CMB program already had a working projection chain of the form
+\begin{equation}
+\frac{\Delta T}{T}=B\times \mathrm{projection}\!\left[\nabla^2\delta\Phi\right],
+\end{equation}
+with finite shell thickness, beam smoothing, and a compound transfer coefficient. That program yielded the filtered-projection viability tests and the candidate splice
+\begin{equation}
+B_{\rm therm,candidate}=\frac{q_T f_b f_r}{4\pi^2}.
+\end{equation}
+What it lacked was a derivation of the source field $\delta\Phi$ as something generated by the theory rather than inserted as a bounded ansatz.
+
+\subsection*{C14.2 What changes now}
+The new field-theoretic extension supplies exactly that missing step. In the broken phase,
+\begin{equation}
+\Phi_{\rm eq}\propto \sqrt{\Lambda-1}
+\end{equation}
+is the background order-parameter amplitude. The relic phase perturbation should therefore be written as
+\begin{equation}
+\boxed{\delta\Phi(\mathbf x)=\Phi_{\rm eq}\,\eta(\mathbf x),}
+\end{equation}
+where $\eta(\mathbf x)$ carries the spatial seed structure. This separation is important:
+\begin{itemize}[leftmargin=1.6em]
+  \item $\Phi_{\rm eq}$ sets the post-critical amplitude scale,
+  \item $\eta(\mathbf x)$ carries the frozen spatial pattern,
+  \item the observable is still produced by projecting the Laplacian of the spatial perturbation, not by projecting the homogeneous order parameter itself.
+\end{itemize}
+
+\subsection*{C14.3 Correct observable chain}
+The correct connection is therefore
+\begin{equation}
+\boxed{\frac{\Delta T}{T}=B\times \mathrm{projection}\!\left[\nabla^2\delta\Phi\right]
+= B\times \mathrm{projection}\!\left[\nabla^2\left(\Phi_{\rm eq}\eta\right)\right].}
+\end{equation}
+If the transition background is slowly varying over the source region, then $\Phi_{\rm eq}$ factors out to leading order,
+\begin{equation}
+\frac{\Delta T}{T}\approx \Phi_{\rm eq}\,B\times \mathrm{projection}\!\left[\nabla^2\eta\right].
+\end{equation}
+So the new shatter note does not change the projection machinery. It changes the meaning of the amplitude: the relic phase perturbation is now sourced by a thermodynamically forced order parameter.
+
+\subsection*{C14.4 Why this is better than the earlier compressed formula}
+A tempting but overly compressed statement would be
+\begin{equation}
+\frac{\Delta T}{T}\sim B\,\nabla^2\sqrt{\Lambda-1}.
+\end{equation}
+That is too aggressive. It conflates three distinct objects:
+\begin{enumerate}[leftmargin=1.6em]
+  \item the homogeneous solvency crossing that sets the order-parameter amplitude,
+  \item the spatial seed structure that freezes into relic perturbations,
+  \item the projection/transfer map onto the last-scattering sphere.
+\end{enumerate}
+The present note keeps them separate, which is both mathematically cleaner and scientifically safer.
+
+\subsection*{C14.5 Immediate physical implication}
+The field-theoretic connection gives a new qualitative prediction lever: the amplitude of the CMB source field should scale with how far the system crosses into the broken phase. Since
+\begin{equation}
+\Phi_{\rm eq}\propto \sqrt{\Lambda-1},
+\end{equation}
+sharper or deeper crossings produce larger relic phase amplitudes, while milder crossings produce weaker amplitudes. This means the CMB amplitude is sensitive not only to projection geometry and transfer efficiency, but also to the thermal sharpness of the decoupling law in the shatter sector.
+
+\subsection*{C14.6 What remains open}
+This note closes the source-field gap, but it does not yet close the full CMB theorem. What remains open is the complete symbolic chain
+\begin{equation}
+\nabla^2\delta\Phi \longrightarrow \text{photon-fluid response} \longrightarrow \frac{\Delta T}{T}
+\end{equation}
+with the transfer coefficient derived rather than inferred numerically. That is still the Open Theorem 3 boundary.
+
+\subsection*{C14.7 Summary of the connection}
+The corrected and now-preserved connection is:
+\begin{equation}
+\boxed{\delta\Phi=\Phi_{\rm eq}\eta,\qquad \Phi_{\rm eq}\propto\sqrt{\Lambda-1},\qquad \frac{\Delta T}{T}=B\times \mathrm{projection}[\nabla^2\delta\Phi].}
+\end{equation}
+This is the first time the chain is continuous in SFT language:
+\begin{equation}
+\text{ledger imbalance} \longrightarrow \text{field instability} \longrightarrow \text{broken-phase relic field} \longrightarrow \text{projected CMB anisotropy}.
+\end{equation}
+That is the correct statement to preserve.
+
+\section*{Closing Note}
+The important correction in this note is not cosmetic. The sign of the quadratic term determines whether the shatter happens in the right physical regime. With
+\begin{equation}
+M_{\rm eff}^2=A(1-\Lambda),
+\end{equation}
+the field-theoretic extension now has the right logic: a solvent shared plasma is stable, the critical point occurs at $\Lambda=1$, and the shatter occurs when the independent-clock burden drives the ledger into insolvency.
+
+The companion-level connection to the CMB program should therefore be read as a source-field upgrade rather than as a replacement of the existing projection calculations. The early-universe program remains at candidate-derivation status overall, but the source field is now much less ad hoc than it was before.
+
+\end{document}
