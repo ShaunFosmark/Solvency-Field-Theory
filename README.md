@@ -1,23 +1,92 @@
 for questions or comments: https://x.com/Shaun_Fosmark
 
-https://zenodo.org/records/19136724
-
-Solvency Field Theory (SFT): The V7 Framework
-From Information Thermodynamics to Dark Energy, Galaxy Dynamics, and Exact General Relativity
+Solvency Field Theory (SFT): The V10 Master Framework
 Overview
-Solvency Field Theory (SFT) proposes that cosmic expansion is not driven by a mysterious vacuum fluid (), but is instead the thermodynamic cost of irreversible information processing. Grounded in Landauer’s Principle and the Holographic Bound, SFT dictates that space has a finite information capacity. As active baryonic structures (black holes, stars) generate entropy, the cosmic horizon must scale to maintain thermodynamic solvency.
-Under SFT, expansion is a definitional thermodynamic identity:  (where  is the fractional rate of entropy accumulation relative to the universe's stored capacity).
-The V7 Framework Results
-This repository contains the mathematical derivations, cosmological data analysis, and reproducible code demonstrating that a single information-theoretic principle naturally resolves anomalies across three distinct orders of magnitude, without invoking new particles or modifying the core equations of General Relativity.
-1. Galactic Dynamics (The SPARC V7 Weak-Field Test)
-SFT yields a weak-field acceleration threshold of . Applied to the raw baryonic mass of 137 SPARC galaxies, this fixed acceleration law reduces the mean relative rotation-curve error by 63% (from 0.458 to 0.167) with zero per-galaxy fitting parameters, providing a first-principles physical origin for empirical modifications like MOND.
-2. Cosmological Expansion (The DESI DR2 Match)
-By modeling the universe as a bimodal entropy ledger (active baryonic processing + passive structural capacity) using 150GB of IllustrisTNG300 telemetry, SFT natively reproduces the evolving Dark Energy equation of state observed in the recent DESI DR2 data. The theoretical prediction () lands cleanly inside the DESI phantom-crossing shadow, distance 0.005 in the CPL plane,  without a Cosmological Constant.
-3. Local Gravity & Strong Field (Exact GR Derivations)
-At the scale of compact objects, the SFT "Compactness Burden" () acts as a localized spatial warp to store intense baryonic information debt. We prove mathematically that this limit strictly forces the exact Schwarzschild exterior metric and closes identically to the Tolman-Oppenheimer-Volkoff (TOV) hydrostatic equations.
-Reading Guide for V7
-If you are new to this framework, please begin with the SFT_V7_Readers_Guide.pdf.
-To verify the galaxy rotation curves: See sft_v7_weakfield_paper_draft.pdf.
-To verify the local gravity math: See sft_doc_6_schwarzschild_derivation.pdf.
-To verify the CMB compatibility: SFT preserves the Planck 2018 acoustic peaks with a 0.078% RMS residual, predicting a distinct large-scale ISW crossover signature for future observatories (e.g., CMB-S4).
-All data necessary to reproduce the SPARC and IllustrisTNG bimodal regressions are included in the supplementary .zip bundles.
+
+The universe has a history because information processing is irreversible; expansion is the shape of that history at cosmological scale, and gravity is its shape at every other scale.
+
+Solvency Field Theory (SFT) is an information-theoretic foundation for cosmology and gravity. It resolves the mass-discrepancy anomalies of standard $\Lambda$CDM cosmology—specifically Dark Energy and Dark Matter—without introducing new particles, new fields, or free parameters.
+
+The framework rests on four established axioms (Landauer's principle, Connes-Rovelli thermal time, the holographic bound, and geometric expansion as maintenance cost). Through the Compton Maintenance Postulate, SFT establishes that every massive particle maintains its quantum existence through continuous phase evolution, demanding exactly one Planck area of cosmological boundary surface per complete phase cycle.
+
+From this foundation, SFT derives the cosmological master equation $H = \dot{S}/I$ as a thermodynamic identity. It successfully predicts:
+
+A modified Friedmann equation differing from the standard result by exactly $1/4\pi^2$.
+
+The empirical MOND acceleration scale ($a_0 = cH_0/2\pi$), confirmed against 137 SPARC galaxies at a 63% error reduction.
+
+The DESI DR2 dark energy equation of state ($w_0 = -0.837, w_a = -0.615$) as a forced transition (the "Engine Crash").
+
+The exact recovery of the Schwarzschild exterior metric and Tolman-Oppenheimer-Volkoff (TOV) hydrostatic equations in the strong-field limit.
+
+This repository contains the V10 Master Architecture, the 82-page mathematical Companion vault, and all supporting historical notes, proofs, and computational references.
+
+🚀 START HERE: The V10 Master Architecture (April 2026)
+
+[NEW] SFT_V10_Master_Paper.pdf
+
+The complete, definitive theory in a single standalone document. Written for the skeptical cosmologist, this paper establishes the four axioms, the 5-appearance unification of the $4\pi^2$ structural identity, the forced four-state cosmic web ladder, and the strong-field closure. It structurally unifies the early-universe CMB imprint and the late-universe dark energy phantom crossing as forced thermodynamic transitions of the universe's maintenance ledger. New readers begin here.
+
+[NEW] SFT_V10_Companion_Combined_Reading_Volume.pdf (82 pages)
+
+The Shop Manual. This companion document is the mathematical vault for V10. It contains the full symbolic derivations, numerical methods, projection integrals, ablation tables, uniqueness pivots, and audit trails for the load-bearing sections of the Master Paper. NOTE: repro pack listed will be assembled and included in V10.1
+
+🌉 The Transitional Capstone
+
+[NEW] V9_1_Addition_Minimal_Bridge_Shatter_CMB_Transfer_Splice_rev.pdf
+
+The critical bridge document finalized just prior to V10. It establishes the temperature-dependent "Shatter" (the forced transition of the early universe) and the filtered 3D-to-2D CMB projection of a relic phase event. Formally introduces the candidate thermal transfer splice ($B_{therm} = q_T f_b f_r / 4\pi^2$) interpreting the $1/4\pi^2$ factor as the geometric requirement for angular-to-linear phase-space conversion.
+
+📂 Historical & Supporting Architecture (V8 & V9)
+
+These documents track the immediate evolution and component proofs leading up to V10. Included for historical reference and deep-dive methodology.
+
+SFT_V9_Unified_Framework.pdf (22 pages): The previous master document. Establishes the constrained minisuperspace action principle and the initial local-to-global scale transition.
+
+V9_0_Unified_Weak_Field_Lag_Action_and_Goal3_Bridge_Final.pdf: Upgrades the weak-field sector into a rigorous scalar gravity theory, surviving historical scalar kill-tests and passing the post-Newtonian solar system gates ($\beta=1$).
+
+SFT_V8_6_Observer_Side_Local_Environment_Closure.pdf: Closes the bounded $w_a$ residual through a derived observer-side covering-geometry correction.
+
+Sft_V8.5_Cosmological_sector_companion_note.pdf: Derives the forced four-state screening ladder from axis factorization and the exact static projection corrections ($s_{wall} = 1/3$, $s_{filament} = 2/3$).
+
+Sft_V8.4_Weak-field_Sparc_PaperV2.pdf & V8.4_Weak_Field_Repo.zip: The geometric weak-field derivation and full computational repository for the SPARC galactic rotation curve confirmations.
+
+SFT_JWST_Early_Massive_Galaxies_and_Bottom_Up_Structure_Formation.pdf: Demonstrates SFT's bottom-up structure formation, natively reproducing the chaotic, clumpy morphologies of early galaxies observed by JWST without dark matter.
+
+The_Recombination_Handoff_Companion_Note.pdf: Demonstrates that recombination was a fundamental bookkeeping transition activating independent Compton maintenance.
+
+📚 Foundation (Background Reading)
+
+These documents synthesize modern physics into an information-theoretic framework, providing an entry point for the paradigm.
+
+Structural_Synthesis_of_Modern_Physics.pdf — The philosophical and structural underpinning of the SFT paradigm.
+
+Appendix_A_and_B.pdf — Supporting foundational theorems.
+
+📄 Legacy Papers (Pre-V8.0)
+
+Older standalone readings. The core physics here has been integrated into and superseded by the V10 Master Framework. Included for archival completeness.
+
+V7.3_Quantum_Phase_Origin.pdf — The early arXiv preprint demonstrating the $4\pi^2$ geometric unit conversion.
+
+V7.4_Count_Equation_and_4pi2.pdf — The formal action principle and early mathematical decomposition of the $4\pi^2$ ratio.
+
+Schwarzschild / TOV / Phase III papers — Early drafts of the strong-field closure.
+
+V7.1_Compton_Maintenance.pdf — The initial proposal of the physical mechanism of particle existence.
+
+V7.2_Falsifiable_Predictions.pdf — Early environment-dependent growth tests.
+
+V6_Bimodal_Results.pdf — The original DESI redshift match and CMB compatibility analysis.
+
+💻 Computational Reference (Reproducibility)
+
+V6_Companion_and_Verify_Bundle.zip — Codebase and data for reproducing the early bimodal expansion results.
+
+Local_Screening_Support_Bundle.zip — Computational verification for the localized halo/screening mechanics.
+
+Phase_III_Local_Ledger_Cost.zip — Data tracking the transition from the global to the local ledger.
+
+Note: The V10 framework was officially locked and published on World Quantum Day (April 14, 2026), honoring the exact $h$ linear phase cycle that drives the universe's geometric expansion.
+
+SFT is an evolving framework. For any questions or comments, please visit: https://x.com/Shaun_Fosmark
